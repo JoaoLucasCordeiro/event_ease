@@ -10,7 +10,7 @@ const Footer = () => {
         </Link>
 
         <p>
-          2023 MegaHub. Todos os direitos reservados.
+          2023 EventEase. Todos os direitos reservados.
         </p>
       </div>
     </footer>
