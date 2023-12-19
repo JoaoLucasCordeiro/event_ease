@@ -10,10 +10,10 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'MegaHub',
-  description: 'Seu mega evento começa aqui.',
+  title: 'EventEase',
+  description: 'Seu evento fica mais fácil com a gente.',
   icons: {
-    icon: '/assets/images/logo.svg'
+    icon: '/assets/images/favicon.png'
   }
 }
 
