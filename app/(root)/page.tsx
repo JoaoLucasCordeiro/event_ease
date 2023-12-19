@@ -10,7 +10,7 @@ export default function Home() {
 
 
           <div className='flex flex-col justify-center gap-8'>
-            <h1 className='h1-bold'>O seu evento começa aqui! No MegaHub.</h1>
+            <h1 className='h1-bold'>O seu evento começa aqui! No EventEase.</h1>
             <p className='p-regular-20 md:p-regular-24'>
               Participe de eventos, crie o seu evento, conecte-se a todos, tudo em um só lugar!
             </p>
