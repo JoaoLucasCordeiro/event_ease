@@ -1,6 +1,8 @@
 'use server'
 
-import { CreateEventParams, GetAllEventsParams } from "@/types"
+import { revalidatePath } from 'next/cache'
+
+import { CreateEventParams, DeleteEventParams, GetAllEventsParams } from "@/types"
 import { handleError } from "../utils"
 import { connectToDatabase } from "../database"
 import User from "../database/models/user.model"
@@ -74,4 +76,15 @@ export const getEventById = async (eventId: String) => {
         handleError(error)
     }
 }
+
+export async function deleteEvent({ eventId, path }: DeleteEventParams) {
+    try {
+      await connectToDatabase()
+  
+      const deletedEvent = await Event.findByIdAndDelete(eventId)
+      if (deletedEvent) revalidatePath(path)
+    } catch (error) {
+      handleError(error)
+    }
+  }
 
