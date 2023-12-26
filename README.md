@@ -3,6 +3,9 @@
 ## Introdução 👾
 Projeto EventEase, plataforma de gestão de eventos full-stack feito em Next JS que busca levar ao usuário facilidade e praticidade tanto para criar e fazer a gestão de entradas em um determinado evento quanto facilidade na compra ou garantir sua participação em algum evento.
 
+![eventease- print](https://github.com/JoaoLucasCordeiro/event_ease/assets/89361241/5f6f4d19-7e8f-4b4e-a3ba-6de5678f7782)
+
+
 ## Tecnologias utilizadas 👨‍💻
 - Node.js
 - Next.js
