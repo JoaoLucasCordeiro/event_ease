@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EventEase - plataforma de eventos 🗓
 
-## Getting Started
+## Introdução 👾
+Projeto EventEase, plataforma de gestão de eventos full-stack feito em Next JS que busca levar ao usuário facilidade e praticidade tanto para criar e fazer a gestão de entradas em um determinado evento quanto facilidade na compra ou garantir sua participação em algum evento.
 
-First, run the development server:
+![eventease- print](https://github.com/JoaoLucasCordeiro/event_ease/assets/89361241/5f6f4d19-7e8f-4b4e-a3ba-6de5678f7782)
 
-```bash
+
+## Tecnologias utilizadas 👨‍💻
+- Node.js
+- Next.js
+- TypeScript
+- TailwindCSS
+- Stripe
+- Zod
+- React Hook Form
+- Shadcn
+- uploadthing
+
+## Features do projeto 🦉
+
+🚩 Autenticação (CRUD) com Clerk: Gerenciamento de usuários por meio do Clerk, garantindo uma autenticação segura e eficiente.
+
+🚩 Criar Eventos: Os usuários podem criar facilmente novos eventos, fornecendo detalhes essenciais como título, data, localização e informações adicionais.
+Ler Eventos: Acesso fácil a uma visão detalhada de todos os eventos, permitindo que os usuários explorem especificidades do evento, incluindo descrições, horários e informações relacionadas.
+
+🚩 Atualizar Eventos: Capacitando os usuários a modificar dinamicamente os detalhes do evento, garantindo que as informações do evento permaneçam precisas e atualizadas.
+Excluir Eventos: Um processo direto para remover eventos do sistema, dando aos administradores a capacidade de gerenciar e organizar a plataforma de forma eficaz.
+
+🚩 Eventos (CRUD): Funcionalidade abrangente para criar, ler, atualizar e excluir eventos, proporcionando aos usuários total controle sobre o gerenciamento de eventos.
+ Eventos Relacionados: Conecta inteligentemente eventos relacionados e os exibe na página de detalhes do evento, tornando-a mais envolvente para os usuários.
+
+🚩 Eventos Organizados: Organização eficiente de eventos, garantindo uma exibição estruturada e amigável ao usuário, ou seja, mostrando eventos criados pelo usuário no perfil do usuário.
+
+🚩 Pesquisa e Filtro: Capacitação dos usuários com um sistema robusto de pesquisa e filtro, permitindo que eles encontrem facilmente os eventos que correspondem às suas preferências.
+
+🚩 Nova Categoria: Categorização dinâmica permite a adição contínua de novas categorias de eventos, mantendo sua plataforma adaptável.
+
+🚩 Checkout e Pagamento com Stripe: Transações de pagamento suaves e seguras usando o Stripe, aprimorando a experiência do usuário durante o processo de checkout.
+
+🚩 Pedidos de Eventos: Sistema abrangente de gerenciamento de pedidos, fornecendo uma visão clara de todas as transações relacionadas a eventos.
+
+🚩 Pesquisa de Pedidos: Funcionalidade rápida e eficiente de pesquisa para pedidos, facilitando o rastreamento e gerenciamento.
+
+# Rodando o projeto em sua máquina 🚀
+
+Siga essas etapas para configurar o projeto localmente em sua máquina.
+
+Pré-requisitos
+
+Certifique-se de ter os seguintes itens instalados em sua máquina:
+
+
+````
+Git
+Node.js
+npm (Gerenciador de Pacotes do Node)
+````
+
+Clonando o Repositório
+
+````
+git clone https://github.com/seu-nome-de-usuário/seu-projeto.git
+cd seu-projeto
+````
+
+Instalação
+
+Instale as dependências do projeto usando o npm:
+
+````
+npm install
+````
+
+Configuração de Variáveis de Ambiente
+
+Crie um novo arquivo chamado .env na raiz do seu projeto e adicione o seguinte conteúdo:
+
+````
+#NEXT
+NEXT_PUBLIC_SERVER_URL=
+
+#CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_CLERK_WEBHOOK_SECRET=
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+
+#MONGODB
+MONGODB_URI=
+
+#UPLOADTHING
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+
+#STRIPE
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+````
+
+Substitua os valores em branco pelos seus dados reais.
+
+Executando o Projeto
+
+````
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+````
